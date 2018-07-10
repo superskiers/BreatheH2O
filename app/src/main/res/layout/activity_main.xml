@@ -12,21 +12,56 @@
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_marginLeft="24dp"
-        android:layout_height="380dp"
+        android:layout_height="400dp"
         android:layout_centerHorizontal="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="16dp"
         android:layout_marginRight="24dp"/>
 
+    <ProgressBar
+        android:id="@+id/progressBarCircle"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/drawable_circle_light_blue"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="100"
+        android:progressDrawable="@drawable/drawable_circle_blue"
+        android:rotation="-90" />
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Breathe for:"
+        android:text="CURRENT ACTION:"
         android:textSize="24sp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="98dp"/>
+        android:layout_marginTop="148dp"/>
 
+    <TextView
+        android:id="@+id/text_view_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view"
+        android:text="BREATHE"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_below="@id/text_view_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="01:00"
+        android:textSize="32sp"
+        android:layout_centerHorizontal="true"/>
+
+   <!--
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -34,15 +69,15 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="116dp"
         android:text="01:00"
-        android:textSize="60sp" />
+        android:textSize="60sp" />-->
 
-    <TextView
+    <!--<TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Next, you will hold your breath for:"
         android:layout_centerInParent="true"
-        android:layout_below="@+id/textView1" />
+        android:layout_below="@+id/textView" />
 
     <TextView
         android:id="@+id/textView3"
@@ -51,7 +86,7 @@
         android:text="0:35"
         android:textSize="32sp"
         android:layout_centerInParent="true"
-        android:layout_below="@+id/textView2" />
+        android:layout_below="@+id/textView2" />-->
 
     <Button
         android:id="@+id/center_button"
